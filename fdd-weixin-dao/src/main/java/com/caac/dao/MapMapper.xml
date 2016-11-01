@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.caac.dao.MapMapper">
+    
+    <select id="getAllPoints" resultType="com.caac.vo.MapPointVo">
+        SELECT sl.PROJ_NAME_ projName, sl.LAT_ lat, sl.LNG_ lng
+        		 FROM source_location sl
+    </select>
+	
+    <select id="getProjectsInCity" resultType="com.caac.vo.MapPointStringVo">
+        SELECT sdw.proj_name_ projName, sdw.proj_baidu_lng_ lng, sdw.proj_baidu_lat_ lat
+        		 FROM source_detail_wofang sdw WHERE proj_city_ LIKE CONCAT('%',#{city},'%')
+    </select>
+</mapper>

@@ -1,0 +1,68 @@
+.mui-content-padded {
+	text-align: center;
+}
+
+.mui-filter>li>a {
+	padding: 0;
+}
+
+.mui-filter li a {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42;
+	padding: 6px 20px;
+	text-align: center;
+	vertical-align: top;
+	white-space: nowrap;
+	color: #333;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+.mui-input-group{
+	background-color: inherit;
+}
+.mui-input-group:before , .mui-input-group:after{
+	display: none;
+}
+
+.mui-table-view .mui-right{
+	float:right;
+}
+
+.mui-table-view .mui-left .mui-switch{
+	display: inline-block;
+	height:20px;
+	width:35px;
+}
+.mui-table-view .mui-left .mui-switch-mini{
+	width:35px;
+}
+.mui-table-view .mui-left .mui-switch .mui-switch-handle{
+	width: 17px;
+	height: 17px;
+}
+
+.mui-table-view .mui-left span,.mui-table-view .mui-right span{
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.mui-table-view input[type=checkbox]{
+	position:absolute;
+	top:16px;
+}
+
+.mui-table-view{
+	font-size:14px;
+	font-weight: bold;
+}
+
+.mui-table-view label{
+	font-weight: normal;
+}
+
+.mui-table-view span{
+	font-size:12px;
+	font-weight: normal;
+	margin-left: 16px;
+}

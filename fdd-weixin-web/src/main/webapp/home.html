@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/menu_user.css" rel="stylesheet" />
+		<link href="css/menu_filter.css" rel="stylesheet" />
+		<style>
+			.mui-off-canvas-left,
+			.mui-off-canvas-right {
+				width: 90%;
+				background: #EFEFF4;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 主界面移动、菜单不动 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left" id="offCanvasSide">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容(左侧) -->
+						<ul class="mui-table-view mui-header">
+							<li class="mui-table-view-cell mui-media mui-header">
+								<img class="mui-media-object mui-pull-left mui-logo" src="images/fdd-logo.png">
+								<div class="mui-media-body">
+									<a href="#">注册</a>
+									<a href="#">登录</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="mui-table-view mui-list">
+							<li class="mui-table-view-cell mui-media">
+								<a href="#">
+									<img class="mui-media-object mui-pull-left mui-icon" src="images/history_icon.png">
+									<div class="mui-media-body">
+										<h5>历史记录</h5>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="#">
+									<img class="mui-media-object mui-pull-left mui-icon" src="images/recent-search_icon.png">
+									<div class="mui-media-body">
+										<h5>最近搜索</h5>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="#">
+									<img class="mui-media-object mui-pull-left mui-icon" src="images/collect_icon.png" style="padding:.15rem;">
+									<div class="mui-media-body">
+										<h5>最近搜索</h5>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+
+			<aside class="mui-off-canvas-right" id="offCanvasSide2">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 （右侧）-->
+						<div class="mui-content ">
+							<div class="mui-content-padded">
+								<ul class="mui-pagination mui-filter">
+									<li class="">
+										<a href="#">
+											刚需
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											过冬
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											度假
+										</a>
+									</li>
+									<li class="">
+										<a href="#">
+											投资
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-6">
+									<li class="mui-table-view-cell mui-left">
+										是否精装：
+										<div class="mui-switch mui-switch-blue mui-switch-mini mui-active">
+											<div class="mui-switch-handle"></div>
+										</div>
+									</li>
+								</div>
+								<div class="mui-col-xs-6">
+									<li class="mui-table-view-cell mui-right">
+										<input name="style" type="checkbox" value="right-none">
+										<span>优先</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-9">
+									<li class="mui-table-view-cell mui-left">
+										预算总价：
+										<label>30万~500万</label>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell mui-right">
+										<input name="style" type="checkbox" value="right-none">
+										<span>优先</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-9">
+									<li class="mui-table-view-cell mui-left">
+										户型面积：
+										<label>20m²~2000m²</label>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell mui-right">
+										<input name="style" type="checkbox" value="right-none">
+										<span>优先</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-9">
+									<li class="mui-table-view-cell mui-left">
+										户型格局：
+										<input name="style" type="checkbox" value="right-none">
+										<span>不限</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell mui-right">
+										<input name="style" type="checkbox" value="right-none">
+										<span>优先</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-9">
+									<li class="mui-table-view-cell mui-left">
+										物业类型：
+										<input name="style" type="checkbox" value="right-none">
+										<span>不限</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell mui-right">
+										<input name="style" type="checkbox" value="right-none">
+										<span>优先</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>住宅</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>公寓</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>洋房</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>商铺</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>别墅</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>loft</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>写字楼</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>综合体</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-6">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>酒店式公寓</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-6">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>产权式酒店</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-12">
+									<li class="mui-table-view-cell mui-left">
+										项目特色：
+										<input name="style" type="checkbox" value="right-none">
+										<span>不限</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>海景</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>湖景</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>江景</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>公园</span>
+									</li>
+								</div>
+							</div>
+
+							<div class="mui-row mui-table-view">
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>山区</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>景区</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+									<li class="mui-table-view-cell">
+										<input name="style" type="checkbox" value="right-none"> <span>小户型</span>
+									</li>
+								</div>
+								<div class="mui-col-xs-3">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+
+			<div class="mui-inner-wrap">
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#offCanvasSide2"></a>
+					<h1 class="mui-title">标题</h1>
+				</header>
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active">
+						<span class="mui-icon mui-icon-home"></span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-phone"></span>
+						<span class="mui-tab-label">电话</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-email"></span>
+						<span class="mui-tab-label">邮件</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-gear"></span>
+						<span class="mui-tab-label">设置</span>
+					</a>
+				</nav>
+				<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 主界面具体展示内容 -->
+
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			var offCanvasInner = document.querySelector('.mui-inner-wrap');
+			offCanvasInner.addEventListener('drag', function(event) {
+				event.stopPropagation();
+			});
+		</script>
+	</body>
+
+</html>

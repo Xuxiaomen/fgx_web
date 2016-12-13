@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.4.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lcZA6Wfuiqjfpa6TdhYsEHyLoY6WD0Ny"></script>
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<!-- 主页面标题 -->
+			<header class="mui-bar mui-bar-nav">
+				<div class="mui-nav-content">
+					<div class="mui-row">
+						<div class="mui-col-xs-1">
+							<a class="mui-icon mui-pull-left" href="#offCanvasSide">
+								<i class="fa fa-navicon fa-fx"></i>
+							</a>
+						</div>
+						<div class=" mui-col-xs-9 ">
+							<div class="mui-input-row mui-search">
+								<input type="search" class="mui-input-clear" placeholder="请输入楼盘名称">
+							</div>
+						</div>
+						<div class="mui-col-xs-2 ">
+							<a class="mui-icon mui-pull-right" href="#offCanvasSide2">
+								<i class="fa fa-filter fa-fx"></i> <small style="font-size: 12px;margin-left:-10px;margin-top:-10px;">搜索</small>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!-- 主界面具体展示内容 -->
+					<!--百度地图容器-->
+					<div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+					<div class="mui-icon-choose">
+						<a href="#">
+							<span class="fa-stack fa-lg">
+  								<i class="fa fa-square fa-stack-2x" style="color: #fff;"></i>
+  								<i class="fa fa-map-marker fa-stack-1x"></i>
+							</span>
+						</a>
+						<a href="#">
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-square fa-stack-2x" style="color:#fff;"></i>
+							  <i class="fa fa-list-ul fa-stack-1x"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		<script src="js/mui.min.js " type="text/javascript " charset="utf-8 "></script>
+		<script type="text/javascript ">
+			mui.init()
+		</script>
+		<script type="text/javascript">
+			//创建和初始化地图函数：
+			function initMap() {
+				createMap(); //创建地图
+				setMapEvent(); //设置地图事件
+				addMapControl(); //向地图添加控件
+				addMapOverlay(); //向地图添加覆盖物
+			}
+
+			function createMap() {
+				map = new BMap.Map("map");
+				map.centerAndZoom(new BMap.Point(110.464453, 19.825504), 12);
+			}
+
+			function setMapEvent() {
+				map.enableScrollWheelZoom();
+				map.enableKeyboard();
+				map.enableDragging();
+				map.enableDoubleClickZoom()
+			}
+
+			function addClickHandler(target, window) {
+				target.addEventListener("click", function() {
+					target.openInfoWindow(window);
+				});
+			}
+
+			function addMapOverlay() {
+				var labels = [];
+				for(var index = 0; index < labels.length; index++) {
+					var opt = {
+						position: new BMap.Point(labels[index].position.lng, labels[index].position.lat)
+					};
+					var label = new BMap.Label(labels[index].content, opt);
+					map.addOverlay(label);
+				};
+			}
+			//向地图添加控件
+			function addMapControl() {
+				var scaleControl = new BMap.ScaleControl({
+					anchor: BMAP_ANCHOR_BOTTOM_LEFT
+				});
+				scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+				map.addControl(scaleControl);
+				var navControl = new BMap.NavigationControl({
+					anchor: BMAP_ANCHOR_TOP_LEFT,
+					type: BMAP_NAVIGATION_CONTROL_LARGE
+				});
+				map.addControl(navControl);
+				var overviewControl = new BMap.OverviewMapControl({
+					anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+					isOpen: true
+				});
+				map.addControl(overviewControl);
+			}
+			var map;
+			initMap();
+		</script>
+	</body>
+
+</html>

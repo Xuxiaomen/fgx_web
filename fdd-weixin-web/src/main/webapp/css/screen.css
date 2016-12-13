@@ -1,0 +1,1475 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/pub.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../sass/pub.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 13, ../sass/pub.scss */
+.container {
+  margin: 0 auto;
+  width: 990px;
+}
+
+/* line 18, ../sass/pub.scss */
+.header {
+  padding: 10px 1%;
+  background-size: cover;
+  background-position: center;
+}
+/* line 22, ../sass/pub.scss */
+.header img {
+  width: 60px;
+  margin-left: 13%;
+}
+/* line 27, ../sass/pub.scss */
+.header span {
+  margin-left: 10px;
+}
+/* line 31, ../sass/pub.scss */
+.header div {
+  float: right;
+  margin-right: 13%;
+  margin-left: 5px;
+  padding: 2px 0;
+  text-align: right;
+  font-size: 14px;
+}
+/* line 39, ../sass/pub.scss */
+.header #login {
+  margin-right: 0;
+}
+
+/* line 44, ../sass/pub.scss */
+.main-header span {
+  color: #fff;
+}
+/* line 48, ../sass/pub.scss */
+.main-header div {
+  color: #fff;
+}
+/* line 52, ../sass/pub.scss */
+.main-header div:hover {
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+/* line 59, ../sass/pub.scss */
+.sub-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+/* line 65, ../sass/pub.scss */
+.sub-header .header-search {
+  margin-right: 20px;
+  margin-top: -7.5px;
+  padding: 0;
+  display: flex;
+}
+/* line 72, ../sass/pub.scss */
+.sub-header div {
+  padding: 2px 0px;
+  cursor: pointer;
+}
+/* line 76, ../sass/pub.scss */
+.sub-header input {
+  font-size: 14px;
+  padding: 7.5px;
+  width: 180px;
+}
+/* line 81, ../sass/pub.scss */
+.sub-header i {
+  padding: 7.5px 10px;
+  color: #fff;
+  background-color: #e52;
+}
+
+/* line 88, ../sass/pub.scss */
+.footer {
+  position: relative;
+  clear: both;
+  margin-top: 50px;
+  padding-top: 50px;
+  width: 100%;
+  height: 200px;
+  background-color: #888;
+}
+/* line 97, ../sass/pub.scss */
+.footer .container {
+  width: 1190px;
+}
+/* line 101, ../sass/pub.scss */
+.footer .container div {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  width: 45%;
+  line-height: 28px;
+}
+/* line 109, ../sass/pub.scss */
+.footer img {
+  display: inline-block;
+  position: absolute;
+  top: 57px;
+}
+
+/* line 117, ../sass/pub.scss */
+.list {
+  overflow: auto;
+}
+/* line 120, ../sass/pub.scss */
+.list > li {
+  position: relative;
+  float: left;
+  width: 310px;
+  margin: 10px;
+}
+/* line 126, ../sass/pub.scss */
+.list > li img {
+  width: 100%;
+}
+
+/* line 133, ../sass/pub.scss */
+.pages {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+/* line 138, ../sass/pub.scss */
+.pages ul {
+  display: block;
+  overflow: auto;
+}
+/* line 142, ../sass/pub.scss */
+.pages li {
+  float: left;
+  margin: 5px;
+  width: 30px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #e00;
+  border: 1px solid #e00;
+}
+/* line 152, ../sass/pub.scss */
+.pages .active {
+  color: #fff;
+  background: #e00;
+}
+/* line 157, ../sass/pub.scss */
+.pages li:hover {
+  color: #fff;
+  background: #f66;
+  cursor: pointer;
+}
+
+/* line 164, ../sass/pub.scss */
+.search-block {
+  margin-top: -94px;
+  position: relative;
+  padding: 30px 0;
+  background-color: #888;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+/* line 171, ../sass/pub.scss */
+.search-block .search {
+  padding-left: 18px;
+}
+/* line 174, ../sass/pub.scss */
+.search-block .container div {
+  float: left;
+  padding: 10px 5px;
+  width: 99px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+/* line 183, ../sass/pub.scss */
+.search-block .container div:hover li {
+  display: block;
+}
+/* line 188, ../sass/pub.scss */
+.search-block .container div i {
+  float: right;
+  padding: 0 3px;
+  color: #ccc;
+  background-color: #fefefe;
+}
+/* line 196, ../sass/pub.scss */
+.search-block ul {
+  margin-top: 10px;
+  margin-left: -5px;
+  width: 109px;
+  position: absolute;
+  z-index: 99;
+}
+/* line 205, ../sass/pub.scss */
+.search-block li {
+  display: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+  background-color: #eee;
+  font-size: 12px;
+}
+/* line 213, ../sass/pub.scss */
+.search-block li:last-child {
+  border-bottom: none;
+}
+/* line 217, ../sass/pub.scss */
+.search-block input[type="text"] {
+  padding: 10px 5px 8px 5px;
+  border: none;
+  width: 400px;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #fff;
+}
+/* line 226, ../sass/pub.scss */
+.search-block .container > i {
+  margin-left: -6px;
+  padding: 10px 30px 8px 30px;
+  border: none;
+  color: #fff;
+  background-color: #3af;
+  border: 1px solid #3af;
+}
+
+/* line 235, ../sass/pub.scss */
+sup {
+  vertical-align: super;
+  font-size: 10px;
+}
+
+/* line 240, ../sass/pub.scss */
+h2 {
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #e52;
+  font-weight: bold;
+}
+
+/* line 249, ../sass/pub.scss */
+.set-box {
+  position: relative;
+}
+/* line 252, ../sass/pub.scss */
+.set-box .set-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: 8px 8px 8px 12px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+/* line 262, ../sass/pub.scss */
+.set-box i {
+  margin-right: 5px;
+}
+
+/* line 268, ../sass/pub.scss */
+.path {
+  padding: 20px 0;
+}
+/* line 270, ../sass/pub.scss */
+.path i {
+  margin-left: 20px;
+  margin-right: 8px;
+  color: #888;
+}
+/* line 275, ../sass/pub.scss */
+.path a {
+  color: #666;
+  font-weight: normal;
+  text-decoration: none;
+}
+/* line 280, ../sass/pub.scss */
+.path a:hover {
+  text-decoration: underline;
+  color: #e52;
+}
+/* line 284, ../sass/pub.scss */
+.path em {
+  font-size: 21px;
+  color: #ccc;
+}
+/* line 289, ../sass/pub.scss */
+.path span {
+  float: right;
+}
+
+/* line 1, ../sass/house-list.scss */
+.header-list {
+  height: 480px;
+}
+
+/* line 5, ../sass/house-list.scss */
+.body-house-list {
+  margin-bottom: 30px;
+}
+/* line 8, ../sass/house-list.scss */
+.body-house-list .list-image {
+  position: relative;
+  width: 310px;
+  height: 171px;
+  overflow: hidden;
+}
+/* line 14, ../sass/house-list.scss */
+.body-house-list .list-image .set-number:hover {
+  cursor: pointer;
+}
+/* line 18, ../sass/house-list.scss */
+.body-house-list .list-image img {
+  width: 100%;
+}
+/* line 22, ../sass/house-list.scss */
+.body-house-list .list-image img:hover {
+  cursor: pointer;
+}
+/* line 28, ../sass/house-list.scss */
+.body-house-list .list-body {
+  width: 308px;
+  border: 1px solid #ccc;
+}
+/* line 31, ../sass/house-list.scss */
+.body-house-list .list-body h3 {
+  margin: 10px 0 0 10px;
+  font-size: 18px;
+}
+/* line 36, ../sass/house-list.scss */
+.body-house-list .list-body h6 {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 2rem;
+}
+/* line 42, ../sass/house-list.scss */
+.body-house-list .list-body b {
+  float: right;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #e00;
+}
+/* line 49, ../sass/house-list.scss */
+.body-house-list .list-body small {
+  color: #e00;
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 54, ../sass/house-list.scss */
+.body-house-list .list-body p {
+  font-size: 12px;
+  line-height: 1.3rem;
+  color: #3b90c4;
+  font-weight: bold;
+}
+/* line 61, ../sass/house-list.scss */
+.body-house-list .list-body ol {
+  height: 39px;
+  clear: both;
+  border-top: 1px solid #ccc;
+}
+/* line 66, ../sass/house-list.scss */
+.body-house-list .list-body li {
+  float: left;
+  width: 60.7969px;
+  padding: 2px 0;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+/* line 74, ../sass/house-list.scss */
+.body-house-list .list-body li:last-child {
+  border-right: none;
+}
+/* line 77, ../sass/house-list.scss */
+.body-house-list .list-body .fa-building {
+  color: #fd713c;
+}
+/* line 80, ../sass/house-list.scss */
+.body-house-list .list-body .fa-home {
+  color: #ac92c7;
+}
+/* line 83, ../sass/house-list.scss */
+.body-house-list .list-body .fa-cube {
+  color: #3eb5a9;
+}
+/* line 86, ../sass/house-list.scss */
+.body-house-list .list-body .fa-leaf {
+  color: #36a736;
+}
+/* line 89, ../sass/house-list.scss */
+.body-house-list .list-body .fa-car {
+  color: #ed5dc1;
+}
+
+/* line 1, ../sass/house-info.scss */
+.header-house-info {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+/* line 6, ../sass/house-info.scss */
+.header-house-info .map-title {
+  display: block;
+  margin-left: 10px;
+  width: 968px;
+}
+
+/* line 14, ../sass/house-info.scss */
+.body-house-info .house-type {
+  display: block;
+}
+/* line 17, ../sass/house-info.scss */
+.body-house-info .house-type li {
+  float: left;
+  margin: 10px;
+  width: 227px;
+  background-color: #fff;
+}
+/* line 24, ../sass/house-info.scss */
+.body-house-info .house-type .img {
+  overflow: hidden;
+  width: 225px;
+  height: 225px;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+/* line 33, ../sass/house-info.scss */
+.body-house-info .house-type .img:hover {
+  border: 1px solid #e52;
+}
+/* line 37, ../sass/house-info.scss */
+.body-house-info .house-type img {
+  width: 100%;
+}
+/* line 41, ../sass/house-info.scss */
+.body-house-info .house-type .info {
+  border: 1px solid #eee;
+  border-top: none;
+  padding: 5px 10px;
+}
+/* line 47, ../sass/house-info.scss */
+.body-house-info .house-type h6 {
+  font-size: 18px;
+  line-height: 2rem;
+}
+/* line 52, ../sass/house-info.scss */
+.body-house-info .house-type p {
+  font-size: 12px;
+  line-height: 1.2rem;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 61, ../sass/house-info.scss */
+.body-house-info .house-type span {
+  line-height: 1rem;
+  float: right;
+}
+
+/* line 71, ../sass/house-info.scss */
+.house-info .birdview {
+  float: left;
+  overflow: hidden;
+  margin: 10px;
+  width: 720px;
+  height: 360px;
+}
+/* line 80, ../sass/house-info.scss */
+.house-info img {
+  width: 100%;
+}
+/* line 84, ../sass/house-info.scss */
+.house-info ul {
+  display: block;
+  margin: 10px;
+  float: left;
+  width: 226px;
+  height: 358px;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+/* line 94, ../sass/house-info.scss */
+.house-info h2 {
+  margin-bottom: 6px;
+}
+/* line 98, ../sass/house-info.scss */
+.house-info li {
+  margin: 0 15px;
+  font-size: 14px;
+  line-height: 1.6rem;
+  color: #aaa;
+  border-bottom: 1px solid #eee;
+}
+/* line 106, ../sass/house-info.scss */
+.house-info li:last-child {
+  border-bottom: none;
+}
+/* line 109, ../sass/house-info.scss */
+.house-info b {
+  margin-left: 5px;
+  color: #666;
+}
+
+/* line 115, ../sass/house-info.scss */
+.house-map {
+  position: relative;
+  clear: both;
+  margin: 0 0 10px 10px;
+  width: 968px;
+  height: 480px;
+}
+/* line 122, ../sass/house-info.scss */
+.house-map .map-container {
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+/* line 127, ../sass/house-info.scss */
+.house-map #house-map {
+  margin: 20px;
+  width: 928px;
+  height: 340px;
+}
+/* line 133, ../sass/house-info.scss */
+.house-map h6 {
+  background-color: #fff;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+  color: #666;
+}
+/* line 141, ../sass/house-info.scss */
+.house-map span {
+  float: right;
+}
+/* line 145, ../sass/house-info.scss */
+.house-map .fa-building {
+  color: #ff6b33;
+}
+/* line 149, ../sass/house-info.scss */
+.house-map .fa-map-marker {
+  color: #398cfc;
+}
+
+/* line 2, ../sass/house-imgset.scss */
+.body-imgset .container {
+  width: 860px;
+}
+/* line 5, ../sass/house-imgset.scss */
+.body-imgset ul {
+  display: block;
+}
+/* line 9, ../sass/house-imgset.scss */
+.body-imgset li {
+  float: left;
+  text-align: center;
+}
+/* line 14, ../sass/house-imgset.scss */
+.body-imgset .set-title {
+  margin-bottom: 20px;
+}
+/* line 16, ../sass/house-imgset.scss */
+.body-imgset .set-title li {
+  width: 20%;
+  font-size: 14px;
+  cursor: pointer;
+}
+/* line 21, ../sass/house-imgset.scss */
+.body-imgset .set-title .active div {
+  background-color: #fff;
+  border-bottom: none;
+}
+/* line 26, ../sass/house-imgset.scss */
+.body-imgset .set-title div {
+  border: 1px solid #ddd;
+  border-right: none;
+  padding: 13px 0;
+}
+/* line 31, ../sass/house-imgset.scss */
+.body-imgset .set-title .right {
+  border-right: 1px solid #ddd;
+}
+/* line 38, ../sass/house-imgset.scss */
+.body-imgset .set-container {
+  clear: both;
+  width: 798px;
+  height: 450px;
+  padding: 30px 30px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+/* line 48, ../sass/house-imgset.scss */
+.body-imgset .set-container div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 54, ../sass/house-imgset.scss */
+.body-imgset .set-container img {
+  height: 100%;
+}
+/* line 59, ../sass/house-imgset.scss */
+.body-imgset .img-nav {
+  position: relative;
+  margin-top: 20px;
+}
+/* line 63, ../sass/house-imgset.scss */
+.body-imgset .img-nav ul {
+  display: block;
+  width: 860px;
+  height: 80px;
+  overflow: hidden;
+}
+/* line 69, ../sass/house-imgset.scss */
+.body-imgset .img-nav li {
+  margin: 10px 0 10px 14px;
+  width: 79px;
+  height: 55px;
+  text-align: center;
+  background-color: #fff;
+}
+/* line 77, ../sass/house-imgset.scss */
+.body-imgset .img-nav > div {
+  position: absolute;
+  top: 10px;
+}
+/* line 82, ../sass/house-imgset.scss */
+.body-imgset .img-nav > div:hover {
+  cursor: pointer;
+}
+/* line 84, ../sass/house-imgset.scss */
+.body-imgset .img-nav > div:hover i {
+  color: #888;
+}
+/* line 89, ../sass/house-imgset.scss */
+.body-imgset .img-nav .first {
+  left: -30px;
+}
+/* line 93, ../sass/house-imgset.scss */
+.body-imgset .img-nav .last {
+  right: -30px;
+}
+/* line 97, ../sass/house-imgset.scss */
+.body-imgset .img-nav li:hover {
+  cursor: pointer;
+}
+/* line 101, ../sass/house-imgset.scss */
+.body-imgset .img-nav div {
+  overflow: hidden;
+  height: 100%;
+  opacity: .5;
+}
+/* line 107, ../sass/house-imgset.scss */
+.body-imgset .img-nav i {
+  line-height: 55px;
+  color: #ddd;
+  text-shadow: 0 0 3px #fff;
+}
+/* line 113, ../sass/house-imgset.scss */
+.body-imgset .img-nav .active {
+  opacity: 1;
+}
+/* line 117, ../sass/house-imgset.scss */
+.body-imgset .img-nav img {
+  height: 100%;
+}
+
+/* line 2, ../sass/house-type.scss */
+.body-type .type-img {
+  float: left;
+  margin: 9px;
+  width: 620px;
+  height: 620px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+/* line 10, ../sass/house-type.scss */
+.body-type .type-img img {
+  width: 100%;
+}
+/* line 15, ../sass/house-type.scss */
+.body-type .login {
+  width: 420px;
+  margin-top: 50px;
+  margin-left: 250px;
+  background-color: #fff;
+  padding: 50px;
+  border: 1px solid #eee;
+}
+/* line 23, ../sass/house-type.scss */
+.body-type .login li {
+  position: relative;
+  font-size: 14px;
+  color: #aaa;
+}
+/* line 27, ../sass/house-type.scss */
+.body-type .login li p {
+  color: #e52;
+}
+/* line 30, ../sass/house-type.scss */
+.body-type .login li .icon {
+  width: 21%;
+  padding: 2px 0;
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #666;
+  background-color: #eee;
+}
+/* line 44, ../sass/house-type.scss */
+.body-type .login i {
+  position: absolute;
+  color: #ccc;
+  top: 23px;
+  left: 12px;
+}
+/* line 50, ../sass/house-type.scss */
+.body-type .login .fa-phone, .body-type .login .fa-user, .body-type .login .fa-key, .body-type .login .fa-lock {
+  color: #666;
+}
+/* line 56, ../sass/house-type.scss */
+.body-type .login input {
+  width: 370px;
+  padding: 10px 10px 10px 35px;
+  margin: 10px 0px;
+  border: 1px solid #eee;
+  font-size: 14px;
+}
+/* line 64, ../sass/house-type.scss */
+.body-type .login input[type="checkbox"] {
+  width: 20px;
+}
+/* line 68, ../sass/house-type.scss */
+.body-type .login .verify {
+  position: absolute;
+  right: .5%;
+  top: 17%;
+  width: 100px;
+  height: 37px;
+  border: 1px solid #ddd;
+}
+/* line 75, ../sass/house-type.scss */
+.body-type .login .verify img {
+  height: 37px;
+  width: 100px;
+}
+/* line 81, ../sass/house-type.scss */
+.body-type .login a[href="reg.html"] {
+  margin-left: 50%;
+}
+/* line 87, ../sass/house-type.scss */
+.body-type .login .remark {
+  padding: 5px 0;
+  font-size: 12px;
+}
+/* line 92, ../sass/house-type.scss */
+.body-type .login .button {
+  display: block;
+  width: 400px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #e52;
+  padding: 10px;
+}
+/* line 103, ../sass/house-type.scss */
+.body-type a {
+  text-decoration: none;
+  color: #888;
+}
+/* line 108, ../sass/house-type.scss */
+.body-type .type-info {
+  position: relative;
+  float: right;
+  margin: 9px;
+  margin-bottom: 50px;
+  width: 330px;
+  height: 620px;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+/* line 118, ../sass/house-type.scss */
+.body-type .type-info h6 {
+  margin-left: 20px;
+  padding: 12px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+/* line 127, ../sass/house-type.scss */
+.body-type .type-info small {
+  font-size: 16px;
+}
+/* line 131, ../sass/house-type.scss */
+.body-type .type-info p {
+  padding: 2px 20px;
+}
+/* line 135, ../sass/house-type.scss */
+.body-type .type-info li {
+  float: left;
+  width: 50%;
+  padding: 2px 0;
+  font-size: 14px;
+}
+/* line 142, ../sass/house-type.scss */
+.body-type .type-info h1 {
+  color: #666;
+  font-size: 14px;
+}
+/* line 146, ../sass/house-type.scss */
+.body-type .type-info .block {
+  clear: both;
+  width: 100%;
+}
+/* line 149, ../sass/house-type.scss */
+.body-type .type-info .block label {
+  color: #888;
+}
+/* line 154, ../sass/house-type.scss */
+.body-type .type-info .short {
+  width: 49%;
+}
+/* line 157, ../sass/house-type.scss */
+.body-type .type-info .short label {
+  color: #888;
+}
+/* line 160, ../sass/house-type.scss */
+.body-type .type-info .short input[type="text"] {
+  width: 32%;
+}
+/* line 165, ../sass/house-type.scss */
+.body-type .type-info .col-12 {
+  width: 100%;
+}
+/* line 167, ../sass/house-type.scss */
+.body-type .type-info .col-12 input[type="radio"] {
+  margin-left: 5px;
+}
+/* line 171, ../sass/house-type.scss */
+.body-type .type-info .col-12 select {
+  width: 216px;
+  margin-right: 0;
+}
+/* line 178, ../sass/house-type.scss */
+.body-type .type-info .long label {
+  color: #888;
+}
+/* line 181, ../sass/house-type.scss */
+.body-type .type-info .long input[type="text"] {
+  width: 40%;
+}
+/* line 186, ../sass/house-type.scss */
+.body-type .type-info b {
+  font-size: 14px;
+  color: #888;
+  margin-right: 5px;
+}
+/* line 192, ../sass/house-type.scss */
+.body-type .type-info p {
+  clear: both;
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 1.5rem;
+  color: #666;
+}
+/* line 201, ../sass/house-type.scss */
+.body-type .type-info ol {
+  clear: both;
+  margin-left: 20px;
+  padding: 10px 20px 20px 0;
+}
+/* line 207, ../sass/house-type.scss */
+.body-type .type-info ol li {
+  position: relative;
+  margin: 2px 0;
+}
+/* line 212, ../sass/house-type.scss */
+.body-type .type-info ol b {
+  margin-right: 3px;
+}
+/* line 216, ../sass/house-type.scss */
+.body-type .type-info span, .body-type .type-info input[type="text"] {
+  display: inline-block;
+  padding: 3px 2px;
+  width: 66px;
+  height: 14px;
+  line-height: 17px;
+  font-size: 14px;
+  border: 1px solid #888;
+}
+/* line 227, ../sass/house-type.scss */
+.body-type .type-info em {
+  position: absolute;
+  padding: 3px 6px;
+  right: 8px;
+  top: 9px;
+  z-index: 1;
+  font-size: 13px;
+  color: #888;
+  background-color: #fff;
+}
+/* line 239, ../sass/house-type.scss */
+.body-type select {
+  width: 70px;
+  margin-right: 5px;
+}
+/* line 244, ../sass/house-type.scss */
+.body-type #long {
+  width: 215px;
+  margin-right: 5px;
+}
+/* line 248, ../sass/house-type.scss */
+.body-type option {
+  background: #fff;
+  border: 1px solid #eee;
+  color: #888;
+}
+/* line 254, ../sass/house-type.scss */
+.body-type .type-radio {
+  padding-left: 40px;
+  color: #888;
+}
+/* line 259, ../sass/house-type.scss */
+.body-type .btn {
+  margin-left: 36%;
+}
+/* line 261, ../sass/house-type.scss */
+.body-type .btn button {
+  width: 40%;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: white;
+  background-color: #ee6122;
+  border: none;
+}
+/* line 273, ../sass/house-type.scss */
+.body-type .order {
+  width: 100%;
+  margin-left: 5px;
+  padding: 10px 20px 20px 0;
+}
+/* line 277, ../sass/house-type.scss */
+.body-type .order li {
+  float: left;
+  width: 50%;
+  padding: 5px 0px;
+  margin: 2px 0;
+  height: 16px;
+  font-size: 14px;
+  color: #333;
+  border: none;
+  text-align: left;
+}
+/* line 289, ../sass/house-type.scss */
+.body-type .order input[type="text"] {
+  width: 42%;
+  margin-left: 0;
+  text-align: right;
+}
+/* line 295, ../sass/house-type.scss */
+.body-type .order label {
+  font-size: 14px;
+  color: #888;
+}
+/* line 300, ../sass/house-type.scss */
+.body-type .order mark {
+  width: 100%;
+  float: left;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  font-size: 11px;
+  font-weight: normal;
+  color: blue;
+  background: none;
+}
+/* line 310, ../sass/house-type.scss */
+.body-type .order mark a {
+  color: yellow;
+}
+/* line 314, ../sass/house-type.scss */
+.body-type .order h5 {
+  font-size: 14px;
+  font-weight: normal;
+  color: red;
+  margin-bottom: 5px;
+}
+/* line 321, ../sass/house-type.scss */
+.body-type .order strong {
+  font-weight: bold;
+}
+/* line 327, ../sass/house-type.scss */
+.body-type .gallery-display {
+  position: relative;
+  float: left;
+  margin: 10px;
+  width: 620px;
+  height: 342px;
+  overflow: hidden;
+}
+/* line 334, ../sass/house-type.scss */
+.body-type .gallery-display img {
+  width: 100%;
+}
+/* line 339, ../sass/house-type.scss */
+.body-type .gallery-display:hover i {
+  display: block;
+}
+/* line 344, ../sass/house-type.scss */
+.body-type .gallery-display i {
+  display: none;
+  position: absolute;
+  top: 140px;
+  color: #fff;
+  font-size: 54px;
+  text-shadow: 0 0 8px #666;
+  cursor: pointer;
+}
+/* line 354, ../sass/house-type.scss */
+.body-type .gallery-display .fa-angle-left {
+  left: 10px;
+}
+/* line 357, ../sass/house-type.scss */
+.body-type .gallery-display .fa-angle-right {
+  right: 10px;
+}
+/* line 363, ../sass/house-type.scss */
+.body-type .gallery-nav ul {
+  float: right;
+  width: 350px;
+  height: 342px;
+  margin-top: 10px;
+}
+/* line 369, ../sass/house-type.scss */
+.body-type .gallery-nav li {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-left: 15px;
+  margin-bottom: 21px;
+}
+/* line 379, ../sass/house-type.scss */
+.body-type .gallery-nav img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+/* line 385, ../sass/house-type.scss */
+.body-type .gallery-nav li:hover {
+  cursor: pointer;
+}
+/* line 387, ../sass/house-type.scss */
+.body-type .gallery-nav li:hover p {
+  display: block;
+}
+/* line 392, ../sass/house-type.scss */
+.body-type .gallery-nav p {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 0 10px solid #000;
+  color: #fcc;
+  background-color: rgba(128, 0, 0, 0.7);
+}
+/* line 405, ../sass/house-type.scss */
+.body-type .gallery-nav b {
+  display: block;
+  font-size: 21px;
+  margin-top: 30px;
+  color: #fff;
+}
+
+/* line 1, ../sass/user-info.scss */
+.head {
+  background-color: #3b90c4;
+  padding-top: 15px;
+}
+/* line 4, ../sass/user-info.scss */
+.head .col-sm-2 {
+  margin-top: 12px;
+}
+/* line 7, ../sass/user-info.scss */
+.head .col-sm-2 img {
+  width: 60px;
+}
+/* line 12, ../sass/user-info.scss */
+.head .col-sm-2 span {
+  color: #fff;
+  margin-left: 14px;
+}
+/* line 18, ../sass/user-info.scss */
+.head .user {
+  position: absolute;
+  right: 0;
+}
+/* line 21, ../sass/user-info.scss */
+.head .user label a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 下面是左侧导航栏的代码 */
+/* line 30, ../sass/user-info.scss */
+.container-fluid {
+  font-size: 14px;
+}
+
+/* line 33, ../sass/user-info.scss */
+.container-fluid .welcome {
+  font-size: 14px;
+  padding: 20px 0;
+  color: #000;
+}
+
+/* line 38, ../sass/user-info.scss */
+.sidebar {
+  margin-top: 20px;
+  padding: 20px 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+/* line 44, ../sass/user-info.scss */
+.sidebar img {
+  width: 50%;
+  margin-top: 15px;
+}
+
+/* line 49, ../sass/user-info.scss */
+.sidebar {
+  padding: 0;
+}
+
+/* line 52, ../sass/user-info.scss */
+.nav-pills {
+  height: 300px;
+}
+
+/* line 55, ../sass/user-info.scss */
+.nav li a {
+  color: #333;
+}
+
+/* line 58, ../sass/user-info.scss */
+.nav .active a {
+  background-color: #e52;
+  color: #bbb;
+}
+
+/* line 63, ../sass/user-info.scss */
+.main {
+  padding: 20px;
+}
+/* line 65, ../sass/user-info.scss */
+.main .panel-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 69, ../sass/user-info.scss */
+.main .page-header {
+  margin-top: 0;
+}
+/* line 72, ../sass/user-info.scss */
+.main input[type="text"] {
+  margin-top: -3.2px;
+}
+/* line 75, ../sass/user-info.scss */
+.main input[type="radio"] {
+  margin-top: -1px;
+}
+
+/* line 81, ../sass/user-info.scss */
+.caption .list-body h3 {
+  margin: 10px 0 0 10px;
+  font-size: 18px;
+}
+/* line 86, ../sass/user-info.scss */
+.caption .list-body h6 {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 2rem;
+}
+/* line 92, ../sass/user-info.scss */
+.caption .list-body b {
+  float: right;
+  margin-right: 10px;
+  font-size: 21px;
+}
+/* line 98, ../sass/user-info.scss */
+.caption .list-body small {
+  color: #888;
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 104, ../sass/user-info.scss */
+.caption .list-body ol {
+  clear: both;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+/* line 109, ../sass/user-info.scss */
+.caption .list-body li {
+  flex: 1;
+  padding: 2px 0;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* line 118, ../sass/user-info.scss */
+.panel-body .all-list .initial {
+  margin: 85px 0;
+}
+
+/* line 122, ../sass/user-info.scss */
+.panel-body .all-list .initial-logo {
+  background: url("http://static1.ljcdn.com/pc/asset/img/user/sprite_user.png");
+  background-repeat: no-repeat;
+  background-position: -48px 0;
+  width: 62px;
+  height: 63px;
+  margin: 0 auto;
+}
+
+/* line 131, ../sass/user-info.scss */
+.panel-body .all-list .initial p {
+  line-height: 30px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* line 139, ../sass/user-info.scss */
+.pagination {
+  margin-bottom: 5px;
+  margin-left: 26%;
+}
+
+/* line 144, ../sass/user-info.scss */
+.save .button {
+  display: block;
+  width: 120px;
+  margin: 20px auto;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #e52;
+  padding: 8px 0;
+  border-radius: 10px;
+}
+
+/* line 155, ../sass/user-info.scss */
+.save a {
+  text-decoration: none;
+}
+
+/* line 158, ../sass/user-info.scss */
+.save .button1 {
+  float: left;
+  margin-left: 250px;
+}
+
+/* line 162, ../sass/user-info.scss */
+.save .button2 {
+  float: left;
+  margin-left: 30px;
+  background-color: #078407;
+}
+
+/* line 2, ../sass/personal-info.scss */
+.panel-body .body-type .login {
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 100px;
+  background-color: #fff;
+  padding: 50px;
+  border: 1px solid #eee;
+}
+/* line 10, ../sass/personal-info.scss */
+.panel-body .body-type .login li {
+  position: relative;
+  font-size: 14px;
+  color: #aaa;
+}
+/* line 14, ../sass/personal-info.scss */
+.panel-body .body-type .login li p {
+  color: #e52;
+}
+/* line 19, ../sass/personal-info.scss */
+.panel-body .body-type .login i {
+  position: absolute;
+  color: #ccc;
+  top: 23px;
+  left: 12px;
+}
+/* line 25, ../sass/personal-info.scss */
+.panel-body .body-type .login input {
+  width: 400px;
+  padding: 10px 35px 10px 35px;
+  margin: 10px 0px;
+  border: 1px solid #eee;
+}
+/* line 32, ../sass/personal-info.scss */
+.panel-body .body-type .login .button {
+  display: block;
+  width: 400px;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #337ab7;
+  padding: 10px;
+}
+
+/* line 1, ../sass/index.scss */
+.header-index {
+  height: 480px;
+  background-image: url(../images/bg1.jpg);
+}
+
+/* line 7, ../sass/index.scss */
+#city-list {
+  margin-top: 50px;
+}
+/* line 10, ../sass/index.scss */
+#city-list li {
+  overflow: hidden;
+  height: 310px;
+}
+/* line 15, ../sass/index.scss */
+#city-list li:hover {
+  cursor: pointer;
+}
+/* line 17, ../sass/index.scss */
+#city-list li:hover img {
+  width: 110%;
+  margin-left: -5%;
+  margin-top: -5%;
+}
+/* line 22, ../sass/index.scss */
+#city-list li:hover p {
+  display: block;
+}
+/* line 27, ../sass/index.scss */
+#city-list .col-2 {
+  width: 640px;
+  height: 310px;
+}
+/* line 32, ../sass/index.scss */
+#city-list img {
+  transition: 1s;
+  width: 100%;
+}
+/* line 37, ../sass/index.scss */
+#city-list h3, #city-list p {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+}
+/* line 43, ../sass/index.scss */
+#city-list h3 {
+  top: 0;
+  font-size: 28px;
+  text-align: center;
+  line-height: 310px;
+}
+/* line 50, ../sass/index.scss */
+#city-list p {
+  display: none;
+  bottom: 0;
+  text-indent: 1rem;
+  line-height: 2rem;
+  color: #bbb;
+  background-color: rgba(0, 0, 0, 0.7);
+}

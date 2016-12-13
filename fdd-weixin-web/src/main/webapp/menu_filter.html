@@ -7,9 +7,14 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link href="css/menu_filter.css" rel="stylesheet" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/bootstrap-slider.min.css" rel="stylesheet" />
+		<style>
+			
+		</style>
 	</head>
 
-	<body>
+	<body style="background-color:#EFEFF4">
 		<div class="mui-content ">
 			<div class="mui-content-padded">
 				<ul class="mui-pagination mui-filter">
@@ -35,12 +40,12 @@
 					</li>
 				</ul>
 			</div>
-			
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-6">
 					<li class="mui-table-view-cell mui-left">
 						是否精装：
-						<div class="mui-switch mui-switch-blue mui-switch-mini mui-active">
+						<div class="mui-switch mui-switch-mini mui-active" style="background-color:#017486;border:2px solid #017486;">
 							<div class="mui-switch-handle"></div>
 						</div>
 					</li>
@@ -52,12 +57,13 @@
 					</li>
 				</div>
 			</div>
-			
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-9">
 					<li class="mui-table-view-cell mui-left">
 						预算总价：
 						<label>30万~500万</label>
+					
 					</li>
 				</div>
 				<div class="mui-col-xs-3">
@@ -69,10 +75,17 @@
 			</div>
 			
 			<div class="mui-row mui-table-view">
+				<div class="mui-col-xs-12 mui-range">
+					<input id="ex1" type="text" class="span2" value="" data-slider-min="30" data-slider-max="500" data-slider-step="5" data-slider-value="[250,450]" />
+				</div>
+			</div>
+
+			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-9">
 					<li class="mui-table-view-cell mui-left">
 						户型面积：
 						<label>20m²~2000m²</label>
+						
 					</li>
 				</div>
 				<div class="mui-col-xs-3">
@@ -83,6 +96,12 @@
 				</div>
 			</div>
 			
+			<div class="mui-row mui-table-view">
+				<div class="mui-col-xs-12 mui-range">
+					<input id="ex2" type="text" class="span2" value="" data-slider-min="20" data-slider-max="2000" data-slider-step="5" data-slider-value="[250,450]" />
+				</div>
+			</div>
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-9">
 					<li class="mui-table-view-cell mui-left">
@@ -98,7 +117,36 @@
 					</li>
 				</div>
 			</div>
-			
+
+			<div class="mui-content-padded">
+				<ul class="mui-pagination mui-filter">
+
+					<li class="mui-active">
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+
+					<li>
+						<a href="#">3</a>
+					</li>
+
+					<li>
+						<a href="#">4</a>
+					</li>
+
+					<li>
+						<a href="#">5</a>
+					</li>
+
+					<li>
+						<a href="#">5+</a>
+					</li>
+
+				</ul>
+			</div>
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-9">
 					<li class="mui-table-view-cell mui-left">
@@ -114,8 +162,7 @@
 					</li>
 				</div>
 			</div>
-			
-			
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-3">
 					<li class="mui-table-view-cell">
@@ -138,7 +185,7 @@
 					</li>
 				</div>
 			</div>
-			
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-3">
 					<li class="mui-table-view-cell">
@@ -151,17 +198,17 @@
 					</li>
 				</div>
 				<div class="mui-col-xs-3">
-					<li class="mui-table-view-cell">
+					<li class="mui-table-view-cell" style="padding-right: 0;">
 						<input name="style" type="checkbox" value="right-none"> <span>写字楼</span>
 					</li>
 				</div>
 				<div class="mui-col-xs-3">
-					<li class="mui-table-view-cell">
+					<li class="mui-table-view-cell" style="padding-right:0px;">
 						<input name="style" type="checkbox" value="right-none"> <span>综合体</span>
 					</li>
 				</div>
 			</div>
-			
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-6">
 					<li class="mui-table-view-cell">
@@ -174,7 +221,7 @@
 					</li>
 				</div>
 			</div>
-		
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-12">
 					<li class="mui-table-view-cell mui-left">
@@ -184,7 +231,7 @@
 					</li>
 				</div>
 			</div>
-			
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-3">
 					<li class="mui-table-view-cell">
@@ -207,7 +254,7 @@
 					</li>
 				</div>
 			</div>
-			
+
 			<div class="mui-row mui-table-view">
 				<div class="mui-col-xs-3">
 					<li class="mui-table-view-cell">
@@ -219,23 +266,165 @@
 						<input name="style" type="checkbox" value="right-none"> <span>景区</span>
 					</li>
 				</div>
-				<div class="mui-col-xs-3">
+				<div class="mui-col-xs-6">
 					<li class="mui-table-view-cell">
 						<input name="style" type="checkbox" value="right-none"> <span>小户型</span>
 					</li>
 				</div>
-				<div class="mui-col-xs-3">
+			</div>
+
+			<div class="mui-table-view mui-row">
+				<div class="mui-table-view-cell mui-collapse mui-col-xs-12">
+					<a class="mui-navigate-right" href="#">
+						临校:
+						<!--<div class="mui-switch mui-switch-blue mui-switch-mini">
+								<div class="mui-switch-handle"></div>
+							</div>-->
+					</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<div class="mui-row">
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>幼儿园</span>
+								</li>
+							</div>
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>初中</span>
+								</li>
+							</div>
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>大学</span>
+								</li>
+							</div>
+						</div>
+
+						<div class="mui-row">
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>小学</span>
+								</li>
+							</div>
+							<div class="mui-col-xs-8">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>高中</span>
+								</li>
+							</div>
+						</div>
+					</ul>
 				</div>
 			</div>
-			
+
+			<div class="mui-table-view mui-row">
+				<div class="mui-table-view-cell mui-collapse mui-col-xs-12">
+					<a class="mui-navigate-right" href="#">
+						开发商:
+						<!--<div class="mui-switch mui-switch-blue mui-switch-mini">
+								<div class="mui-switch-handle"></div>
+							</div>-->
+					</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<div class="mui-row">
+							<div class="mui-col-xs-12">
+								<li class="mui-table-view-cell">
+									<input type="text" class="mui-input-clear" placeholder="请输入开发商">
+								</li>
+							</div>
+						</div>
+
+						<div class="mui-row">
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>万科</span>
+								</li>
+							</div>
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>恒大</span>
+								</li>
+							</div>
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>绿地</span>
+								</li>
+							</div>
+						</div>
+
+						<div class="mui-row">
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>鲁能</span>
+								</li>
+							</div>
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>碧桂园</span>
+								</li>
+							</div>
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>广物</span>
+								</li>
+							</div>
+						</div>
+
+						<div class="mui-row">
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>保利</span>
+								</li>
+							</div>
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>海航</span>
+								</li>
+							</div>
+							<div class="mui-col-xs-4">
+								<li class="mui-table-view-cell">
+									<input name="style" type="checkbox" value="right-none"> <span>其它</span>
+								</li>
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<div class="mui-row mui-table-view">
+				<div class="mui-col-xs-3">
+					<li class="mui-table-view-cell mui-left">
+						排序:
+					</li>
+				</div>
+				<div class="mui-col-xs-9">
+					<li class="mui-table-view-cell mui-select">
+						<select name="">
+							<option value="">不限</option>
+							<option value="">最新发布</option>
+							<option value="">均价从低到高</option>
+							<option value="">均价从高到低</option>
+							<option value="">占地面积</option>
+							<option value="">开盘时间</option>
+						</select>
+					</li>
+				</div>
+			</div>
+
+			<div class="mui-row mui-table-view">
+				<div class="mui-col-xs-12">
+					<button type="button" class="mui-btn mui-btn-block" style="background-color:#017486;color:#fff;">提交</button>
+				</div>
+			</div>
 		</div>
-		
-		
-		
 		<script src="js/mui.min.js"></script>
+		<script src="js/bootstrap-slider.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init();
+			var slider = new Slider('#ex1', {});
+			var slider = new Slider('#ex2', {});
+			mui('.mui-pagination li a').click(function(){
+				mui('this').css('background-color','#017486');
+			})
 		</script>
 	</body>
-
 </html>

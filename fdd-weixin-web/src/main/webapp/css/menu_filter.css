@@ -1,29 +1,51 @@
-.mui-content-padded {
-	text-align: center;
+.mui-table-view .mui-table-view-cell{
+	padding:8px 15px;
 }
 
-.mui-filter>li>a {
-	padding: 0;
+.mui-table-view .mui-table-view-cell>a {
+	text-decoration: none;
+}
+
+.mui-content-padded {
+	text-align: center;
 }
 
 .mui-filter li a {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.42;
-	padding: 6px 20px;
+	padding: 6px 18px;
 	text-align: center;
 	vertical-align: top;
 	white-space: nowrap;
 	color: #333;
 	border: 1px solid #ccc;
-	background-color: #fff;
+	background-color: #efeff4;
 }
+
+.mui-filter-small li a {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42;
+	padding: 6px 15px;
+	text-align: center;
+	vertical-align: top;
+	white-space: nowrap;
+	color: #333;
+	border: 1px solid #ccc;
+	background-color: #efeff4;
+}
+
+.mui-pagination>li:first-child>a ,.mui-pagination>li:last-child>a {
+	border-radius: 0;
+}
+
 .mui-input-group{
 	background-color: inherit;
 }
-.mui-input-group:before , .mui-input-group:after{
+/*.mui-input-group:before , .mui-input-group:after{
 	display: none;
-}
+}*/
 
 .mui-table-view .mui-right{
 	float:right;
@@ -43,16 +65,18 @@
 }
 
 .mui-table-view .mui-left span,.mui-table-view .mui-right span{
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: normal;
 }
 
 .mui-table-view input[type=checkbox]{
 	position:absolute;
-	top:16px;
+	top:9px;
+	cursor:default;
 }
 
 .mui-table-view{
+	background:#EFEFF4;
 	font-size:14px;
 	font-weight: bold;
 }
@@ -65,4 +89,58 @@
 	font-size:12px;
 	font-weight: normal;
 	margin-left: 16px;
+}
+
+.mui-table-view .mui-switch{
+	display: inline-block;
+	height:20px;
+	width:35px;
+}
+.mui-table-view .mui-switch-mini{
+	width:35px;
+}
+.mui-table-view .mui-switch .mui-switch-handle{
+	width: 17px;
+	height: 17px;
+}
+
+.mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cell{
+	padding-left: 15px;
+}
+
+.mui-table-view .mui-range {
+	padding:11px 15px;
+}
+
+.mui-filter li.mui-active a, .mui-filter-small li.mui-active a{
+	background-color:#017486;
+	border-color:#017486;
+}
+
+.mui-table-view-chevron {
+	padding-left:3px;
+	padding-right:10px;
+	background-color:#F7F7F7;
+}
+.mui-table-view-chevron .mui-table-view-cell{
+	padding-right: 0;
+}
+
+.mui-table-view-chevron .mui-input-clear{
+	margin-bottom: 0;
+	height:30px;
+	width:82%;
+}
+
+.mui-table-view .mui-select{
+	margin-left: -20px;
+}
+
+.mui-select select{
+	padding: 0;
+}
+
+.mui-table-view .mui-btn{
+	padding:5px 0;
+	margin-top:15px;
 }
